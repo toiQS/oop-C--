@@ -1,21 +1,15 @@
 #include <iostream>
 using namespace std;
-class Student{
+class student{
     public:
-    string Name;
-    void Nhap();
-    void Xuat();
-    // void Student::Nhap(){
-    //     cout<<"Nhap Ho Ten: "<<endl;
-    //     cin>>Name;
-    // }
-    void Student::Xuat(){
-        cout<<"Ten Sinh Vien: "<<Name;
+    string name;
+    void xuat(){
+        cout<<"Ten: "<<name;
     }
 };
 int main(){
-    Student s;
-    s.Name = "Sieu";
-    s.Xuat();
+    student s;
+    s.name = "sieu";
+    s.xuat();
     return 0;
 }
